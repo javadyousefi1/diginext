@@ -1,6 +1,8 @@
 import { useState } from "react";
-import AddTodo from "./AddTodo";
+// toast
 import toast from "react-hot-toast";
+// components
+import AddTodo from "./AddTodo";
 import TodoCart from "./TodoCart";
 import Empty from './../Empty';
 
@@ -10,6 +12,7 @@ const TodoApp = () => {
   const handleAddNewTodo = (newTodo) => {
     const isTitleExist = todo.findIndex((item) => item.title === newTodo);
 
+    // prevent adding a todo with the same title as existing one
     if (isTitleExist !== -1) {
       toast.error("title already exists");
       return false;
@@ -49,7 +52,6 @@ const TodoApp = () => {
   return (
     <section className="flex justify-center items-center mt-10 flex-col">
       <AddTodo handleAddNewTodo={handleAddNewTodo} />
-
       {/* show message if there is no todo to show */}
       {todo.length === 0 && <Empty/>}
       {/* iterate of todo list */}
