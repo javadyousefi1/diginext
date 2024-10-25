@@ -22,7 +22,7 @@ const TodoCart = ({
           {index + 1}
         </div>
         <span>Title :</span>
-        <span className="max-w-[25ch] whitespace-nowrap overflow-hidden text-ellipsis">
+        <span title={title} className="max-w-[25ch] whitespace-nowrap overflow-hidden text-ellipsis">
           {title}
         </span>
         <span>-</span>
