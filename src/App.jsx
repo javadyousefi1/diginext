@@ -4,7 +4,7 @@ import TodoApp from "./components/todo/TodoApp";
 
 function App() {
   return (
-    <main className="bg-gray-100 h-screen">
+    <main className="min-h-screen">
       <Header />
       <TodoApp />
       <Toaster />
