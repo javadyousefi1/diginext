@@ -17,7 +17,7 @@ const TodoCart = ({
 
   return (
     <>
-      <div className="rounded-lg p-2 border  w-[600px] m-3 flex justify-start items-center gap-x-3 text-sm">
+      <div className="rounded-lg p-2 border  w-[300px] md:w-[600px] md:flex-row flex-col gap-y-2 m-3 flex justify-start items-center gap-x-3 text-sm">
         <div className="bg-purple-200 min-w-6 min-h-6 w-6 h-6 rounded-full flex justify-center items-center">
           {index + 1}
         </div>

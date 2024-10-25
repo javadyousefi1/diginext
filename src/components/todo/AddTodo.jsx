@@ -32,7 +32,7 @@ const AddTodo = ({ handleAddNewTodo }) => {
             id="title"
             ref={inputRef}
             type="text"
-            className="w-[600px] p-2 rounded-lg border outline-none transition-all ease-linear duration-100    border-gray-100 focus:border-purple-500 hover:border-purple-300"
+            className="w-[300px] md:w-[600px] p-2 rounded-lg border outline-none transition-all ease-linear duration-100    border-gray-100 focus:border-purple-500 hover:border-purple-300"
           />
         </div>
         <button
